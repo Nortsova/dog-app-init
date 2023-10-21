@@ -1,20 +1,18 @@
 import { createTheme } from '@mui/material/styles';
 import { MuiButtonConfig } from './button.config';
+import './fonts.css';
 
-// A custom theme for this app
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#921FED',
-      contrastText: '#FFFFFF'
+      main: '#921FED'
     },
     secondary: {
-      main: '#FFFFFF',
-      contrastText: '#921FED'
+      main: '#FCFAFA'
     },
     text: {
-      primary: '#5F556D'
-      // secondary: "#FFFFFF",
+      primary: '#FCFAFA',
+      secondary: '#921FED'
     },
     grey: {
       100: '#FBFAFC',
@@ -27,14 +25,11 @@ const theme = createTheme({
     },
     warning: {
       main: '#FFCF32'
-    },
-    background: {
-      paper: '#FBFAFC'
     }
   },
   typography: {
     fontSize: 20,
-    fontFamily: "'Dosis', sans-serif",
+    fontFamily: 'Dosis, sans-serif',
     fontWeightRegular: 400,
     fontWeightMedium: 500,
     fontWeightBold: 600

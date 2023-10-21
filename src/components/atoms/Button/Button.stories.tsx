@@ -8,11 +8,15 @@ const meta = {
     variant: {
       options: ['contained', 'outlined'],
       control: 'radio'
+    },
+    color: {
+      options: ['primary', 'secondary'],
+      control: 'radio'
     }
   }
 } satisfies Meta<typeof Button>;
-
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 export const Primary: Story = {
