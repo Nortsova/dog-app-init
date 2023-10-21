@@ -3,7 +3,7 @@ import { Components, Theme, alpha } from '@mui/material';
 export const MuiButtonConfig: Components<Theme>['MuiButton'] = {
   styleOverrides: {
     root: ({ theme }) => ({
-      borderRadius: 20,
+      borderRadius: 10,
       boxShadow: 'none',
       textTransform: 'none',
       fontSize: 20,
@@ -15,21 +15,21 @@ export const MuiButtonConfig: Components<Theme>['MuiButton'] = {
     }),
     containedPrimary: ({ theme: { palette } }) => ({
       backgroundColor: palette.primary.main,
-      color: palette.primary.contrastText,
+      color: palette.text.primary,
+      boxShadow: `3px 3px 0px 0px #000000`,
       '&:hover': {
-        backgroundColor: palette.action.hover
+        backgroundColor: palette.action.hover,
+        boxShadow: `3px 3px 0px 0px #000000`
       },
       '&:active': {
         backgroundColor: palette.action.selected,
-        boxShadow: `inset 0px -4px 6px ${alpha(
-          palette.common.white,
-          0.25
-        )}, inset 0px 4px 6px ${alpha(palette.common.black, 0.25)}`
+        boxShadow: `3px 3px 0px 0px #000000`
       }
     }),
     containedSecondary: ({ theme: { palette } }) => ({
       backgroundColor: palette.secondary.main,
-      color: palette.secondary.contrastText,
+      color: palette.text.secondary,
+      boxShadow: `3px 3px 0px 0px #000000`,
       '&:hover': {
         backgroundColor: palette.grey[100]
       },
@@ -38,7 +38,25 @@ export const MuiButtonConfig: Components<Theme>['MuiButton'] = {
       }
     }),
     outlinedPrimary: ({ theme: { palette } }) => ({
-      color: palette.primary.contrastText
+      backgroundColor: 'transparent',
+      fontFamily: 'Dosis, sans-serif',
+      color: palette.text.secondary,
+      border: `1px solid ${palette.primary.main}`,
+      boxShadow: `3px 3px 0px 0px #000000`,
+      '&:hover': {
+        backgroundColor: 'transparent',
+        borderColor: palette.action.hover,
+        boxShadow: `3px 3px 0px 0px #000000`
+      },
+      '&:active': {
+        borderColor: palette.action.selected,
+        boxShadow: `3px 3px 0px 0px #000000`
+      }
+    }),
+    outlinedSecondary: ({ theme: { palette } }) => ({
+      backgroundColor: 'transparent',
+      color: palette.text.primary,
+      border: `1px solid ${palette.secondary.main}`
     })
   },
   defaultProps: {
