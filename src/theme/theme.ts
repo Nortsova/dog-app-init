@@ -12,6 +12,10 @@ const theme = createTheme({
       main: '#FFFFFF',
       contrastText: '#921FED'
     },
+    common: {
+      black: '#000000',
+      white: '#FFFFFF'
+    },
     text: {
       primary: '#5F556D'
       // secondary: "#FFFFFF",
