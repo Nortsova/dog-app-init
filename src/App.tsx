@@ -1,17 +1,13 @@
-import { Button } from '@mui/material';
 import './App.css';
-import { HeartButton } from './components/atoms/HeartButton';
-import { FilterButton } from './components/atoms/FilterButton';
+import { Card } from './components/atoms/Card';
+import { Header } from './components/organisms/Header';
 
 function App() {
   return (
     <>
-      <Button>
-        <HeartButton state="default" />
-      </Button>
-      <Button variant="contained" color="secondary">
-        <FilterButton state="default" />
-      </Button>
+      <Header />
+      <Card borderRadius={0} variant="primary" />
+      <Card borderRadius={10} variant="secondary" />
     </>
   );
 }
