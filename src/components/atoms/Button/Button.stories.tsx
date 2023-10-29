@@ -33,7 +33,6 @@ export const Secondary: Story = {
 export const Text: Story = {
   args: {
     variant: 'text',
-    color: 'warning',
     children: 'Button'
   }
 };
