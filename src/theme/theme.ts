@@ -2,7 +2,7 @@ import { createTheme } from '@mui/material/styles';
 import { MuiButtonConfig } from './button.config';
 
 // A custom theme for this app
-const theme = createTheme({
+const dogAppTheme = createTheme({
   palette: {
     primary: {
       main: '#921FED',
@@ -10,7 +10,8 @@ const theme = createTheme({
     },
     secondary: {
       main: '#FFFFFF',
-      contrastText: '#921FED'
+      contrastText: '#921FED',
+      light: 'red'
     },
     text: {
       primary: '#5F556D'
@@ -45,8 +46,22 @@ const theme = createTheme({
       defaultProps: {
         disableRipple: true
       }
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          backgroundColor: theme.palette.error.dark
+        })
+      }
+    },
+    MuiCardContent: {
+      styleOverrides: {
+        root: ({ theme }) => ({
+          backgroundColor: theme.palette.secondary.light
+        })
+      }
     }
   }
 });
 
-export default theme;
+export default dogAppTheme;

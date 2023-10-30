@@ -38,10 +38,15 @@ export const MuiButtonConfig: Components<Theme>['MuiButton'] = {
       }
     }),
     outlinedPrimary: ({ theme: { palette } }) => ({
-      color: palette.primary.contrastText
+      color: palette.primary.contrastText,
+
+      '&:hover': {
+        backgroundColor: palette.secondary.light
+      }
     })
   },
   defaultProps: {
+    size: 'small',
     disableRipple: true
   }
 };

@@ -1,12 +1,28 @@
-import { useState } from 'react';
-import { Button } from '@mui/material';
-
+import { NavLink, Outlet } from 'react-router-dom';
+import { Box } from '@mui/material';
 import reactLogo from './assets/react.svg';
 
 import './App.css';
 
+const headerMenu = [
+  {
+    title: 'Home',
+    path: '/'
+  },
+  {
+    title: 'Breed',
+    path: '/breed'
+  },
+  {
+    title: 'Vote',
+    path: '/vote'
+  },
+  {
+    title: 'History',
+    path: '/history'
+  }
+];
 function App() {
-  const [count, setCount] = useState(0);
   return (
     <>
       <div>
@@ -14,18 +30,20 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>1Vite + React</h1>
-      <div className="card">
-        <Button onClick={() => setCount(c => c + 1)} disableRipple>
-          count is {count}
-        </Button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {headerMenu.map(item => (
+        <NavLink to={item.path}>
+          {({ isActive }) => (
+            <Box
+              sx={{
+                color: isActive ? 'success.light' : 'inherit'
+              }}
+            >
+              {item.title}
+            </Box>
+          )}
+        </NavLink>
+      ))}
+      <Outlet />
     </>
   );
 }
