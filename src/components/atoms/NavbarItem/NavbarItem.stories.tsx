@@ -5,15 +5,15 @@ const meta = {
   title: 'Atoms/NavbarItem',
   component: NavbarItem,
   argTypes: {
-    children: ['default']
+    children: ['main']
   }
 } satisfies Meta<typeof NavbarItem>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
+export const Item: Story = {
   args: {
-    children: 'default'
+    children: 'main'
   }
 };

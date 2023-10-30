@@ -1,12 +1,48 @@
-import { Stack } from '@mui/material';
-import { NavbarItem } from '../../atoms/NavbarItem';
+import { Button, Stack } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
-const pages = ['Main', 'Breeds', 'Vote', 'History', 'Your uploads'];
+const headerMenu = [
+  {
+    title: 'Main',
+    path: '/',
+    id: 1
+  },
+  {
+    title: 'Breeds',
+    path: '/breed',
+    id: 2
+  },
+  {
+    title: 'Vote',
+    path: '/vote',
+    id: 3
+  },
+  {
+    title: 'History',
+    path: '/history',
+    id: 4
+  },
+  {
+    title: 'Your uploads',
+    path: '/uploads',
+    id: 5
+  }
+];
 
 const Navbar = () => (
   <Stack direction="row" spacing={6}>
-    {pages.map(page => (
-      <NavbarItem key={page}>{page}</NavbarItem>
+    {headerMenu.map(item => (
+      <NavLink to={item.path} key={item.id}>
+        {({ isActive }) => (
+          <Button
+            key={item.path}
+            variant={isActive ? 'contained' : 'text'}
+            sx={{ whiteSpace: 'nowrap' }}
+          >
+            {item.title}
+          </Button>
+        )}
+      </NavLink>
     ))}
   </Stack>
 );
