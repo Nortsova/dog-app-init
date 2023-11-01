@@ -19,8 +19,9 @@ export const MuiButtonConfig: Components<Theme>['MuiButton'] = {
       '&:hover': {
         backgroundColor: palette.action.hover
       },
-      '&:active': {
-        backgroundColor: palette.action.selected
+      '&:active, &:focus, &:focus-visible': {
+        backgroundColor: palette.action.selected,
+        outline: 'unset'
       }
     }),
     containedSecondary: ({ theme: { palette } }) => ({
@@ -44,17 +45,17 @@ export const MuiButtonConfig: Components<Theme>['MuiButton'] = {
       boxShadow: 'none'
     }),
     text: ({ theme: { palette } }) => ({
-      color: palette.warning.main,
-      padding: 0,
+      color: palette.text.primary,
       boxShadow: 'none',
       '&:hover': {
         color: palette.primary.main,
         boxShadow: 'none'
       },
-      '&:active': {
+      '&:active, &:focus, &:focus-visible': {
         color: palette.text.secondary,
         backgroundColor: palette.primary.main,
-        boxShadow: 'none'
+        boxShadow: 'none',
+        outline: 'none'
       }
     })
   },

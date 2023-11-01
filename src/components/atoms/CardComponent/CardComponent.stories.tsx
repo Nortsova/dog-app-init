@@ -1,15 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { Card } from '.';
+import { CardComponent } from '.';
 
 const meta = {
   title: 'Atoms/CardComponent',
-  component: Card,
+  component: CardComponent,
   argTypes: {
     variant: {
       options: ['primary', 'secondary']
     }
   }
-} satisfies Meta<typeof Card>;
+} satisfies Meta<typeof CardComponent>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;

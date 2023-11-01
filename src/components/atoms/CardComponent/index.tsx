@@ -5,7 +5,7 @@ type CardComponentProps = {
   borderRadius: number;
 };
 
-export const Card = styled(Box)<CardComponentProps>(
+export const CardComponent = styled(Box)<CardComponentProps>(
   ({ theme, variant, borderRadius = 20 }) => ({
     position: 'relative',
     maxWidth: 345,
