@@ -36,11 +36,11 @@ exports[`Button should match snapshot Component 1`] = `
   color: inherit;
   font-family: 'Dosis',sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.1607142857142858rem;
   line-height: 1.75;
   text-transform: uppercase;
   min-width: 64px;
-  padding: 6px 16px;
+  padding: 4px 10px;
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -116,11 +116,11 @@ exports[`Button should match snapshot Component 1`] = `
 
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium emotion-0"
+    class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeSmall MuiButton-containedSizeSmall emotion-0"
     tabindex="0"
     type="button"
   >
-    Button
+    My Btn
   </button>
 </div>
 `;
@@ -161,11 +161,11 @@ exports[`Button should match snapshot Component 2`] = `
   color: inherit;
   font-family: 'Dosis',sans-serif;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1.1607142857142858rem;
   line-height: 1.75;
   text-transform: uppercase;
   min-width: 64px;
-  padding: 5px 15px;
+  padding: 3px 9px;
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -219,9 +219,13 @@ exports[`Button should match snapshot Component 2`] = `
   box-shadow: none;
 }
 
+.emotion-0:hover {
+  background-color: red;
+}
+
 <div>
   <button
-    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium emotion-0"
+    class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall emotion-0"
     tabindex="0"
     type="button"
   >

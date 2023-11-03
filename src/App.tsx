@@ -20,6 +20,10 @@ const headerMenu = [
   {
     title: 'History',
     path: '/history'
+  },
+  {
+    title: 'Favorite',
+    path: '/favorites'
   }
 ];
 function App() {
@@ -31,7 +35,7 @@ function App() {
         </a>
       </div>
       {headerMenu.map(item => (
-        <NavLink to={item.path}>
+        <NavLink to={item.path} key={item.path}>
           {({ isActive }) => (
             <Box
               sx={{
