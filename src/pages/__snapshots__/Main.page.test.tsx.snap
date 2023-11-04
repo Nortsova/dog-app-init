@@ -1,0 +1,279 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main Page Should render empty list 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-0 .MuiBox-root {
+  width: 300px;
+}
+
+.emotion-0 .MuiBox-root:nth-child(2n) {
+  width: 200px;
+}
+
+<div>
+  <div>
+    TestComponent
+  </div>
+  0
+  <button
+    data-testid="btn-next"
+    type="button"
+  >
+    Next page
+  </button>
+  <button
+    data-testid="btn-prev"
+    type="button"
+  >
+    prev page
+  </button>
+  <div
+    class="MuiStack-root emotion-0"
+  />
+</div>
+`;
+
+exports[`Main Page should match snapshot Component 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-0 .MuiBox-root {
+  width: 300px;
+}
+
+.emotion-0 .MuiBox-root:nth-child(2n) {
+  width: 200px;
+}
+
+.emotion-1 {
+  max-width: 300px;
+  border: 2px solid;
+  border-color: transparent;
+}
+
+.emotion-2 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Dosis',sans-serif;
+  font-weight: 500;
+  font-size: 1.1607142857142858rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 4px 5px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #921FED;
+  border-radius: 20px;
+  box-shadow: none;
+  text-transform: none;
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 8px 16px;
+}
+
+.emotion-2::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-2.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-2 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(146, 31, 237, 0.04);
+}
+
+@media (hover: none) {
+  .emotion-2:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-2.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.emotion-2:hover,
+.emotion-2:active {
+  box-shadow: none;
+}
+
+.emotion-4 {
+  max-width: 300px;
+  border: 2px solid;
+  border-color: #FFCF32;
+}
+
+<div>
+  <div>
+    TestComponent
+  </div>
+  0
+  <button
+    data-testid="btn-next"
+    type="button"
+  >
+    Next page
+  </button>
+  <button
+    data-testid="btn-prev"
+    type="button"
+  >
+    prev page
+  </button>
+  <div
+    class="MuiStack-root emotion-0"
+  >
+    <div
+      class="MuiBox-root emotion-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall emotion-2"
+        data-testid="like-btn-1"
+        tabindex="0"
+        type="button"
+      >
+        default
+      </button>
+      <img
+        alt="1"
+        src="url1"
+        width="100%"
+      />
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall emotion-2"
+        tabindex="0"
+        type="button"
+      >
+        More
+      </button>
+      <h3 />
+      <p>
+        test descr
+      </p>
+    </div>
+    <div
+      class="MuiBox-root emotion-4"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall emotion-2"
+        data-testid="like-btn-2"
+        tabindex="0"
+        type="button"
+      >
+        default
+      </button>
+      <img
+        alt="2"
+        src="url2"
+        width="100%"
+      />
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall emotion-2"
+        tabindex="0"
+        type="button"
+      >
+        More
+      </button>
+      <h3 />
+      <p>
+        test descr
+      </p>
+    </div>
+    <div
+      class="MuiBox-root emotion-1"
+    >
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall emotion-2"
+        data-testid="like-btn-3"
+        tabindex="0"
+        type="button"
+      >
+        default
+      </button>
+      <img
+        alt="3"
+        src="url3"
+        width="100%"
+      />
+      <button
+        class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall emotion-2"
+        tabindex="0"
+        type="button"
+      >
+        More
+      </button>
+      <h3 />
+      <p>
+        test descr
+      </p>
+    </div>
+  </div>
+</div>
+`;

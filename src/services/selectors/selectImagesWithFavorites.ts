@@ -12,8 +12,14 @@ export interface GetImagesProps {
 
 export const selectImagesWithFavorites = ({ getImagesProps }: GetImagesProps) =>
   createSelector(
-    (state: RootState) =>
-      imagesApi.endpoints.getImages.select(getImagesProps)(state)?.data || [],
+    (state: RootState) => {
+      console.log('state', state);
+      console.log('imagesApi', imagesApi);
+
+      return (
+        imagesApi.endpoints.getImages.select(getImagesProps)(state)?.data || []
+      );
+    },
     (state: RootState) =>
       favoritesApi.endpoints.getFavorites.select()(state)?.data || [],
     (images, favorites) => {

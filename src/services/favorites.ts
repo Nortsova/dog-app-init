@@ -29,8 +29,10 @@ export const favoritesApi = api.injectEndpoints({
     }),
     getFavorites: build.query<PostsResponse, void>({
       query: () => ({ url: `favourites` }),
-      providesTags: (result = []) => [
-        ...result.map(({ id }) => ({ type: 'Favorites', id }) as const),
+      providesTags: result => [
+        ...(result
+          ? result.map(({ id }) => ({ type: 'Favorites', id }) as const)
+          : []),
         { type: 'Favorites' as const, id: 'LIST' }
       ]
     })

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Custom Component should match snapshot Component 1`] = `
+<div>
+  <div>
+    Error
+  </div>
+</div>
+`;
+
+exports[`Custom Component should match snapshot Component 2`] = `
+<div>
+  <div>
+    Success
+  </div>
+</div>
+`;
+
+exports[`Custom Component should match snapshot Component 3`] = `
+<div>
+  <div>
+    Loading...
+  </div>
+</div>
+`;
+
+exports[`Custom Component should match snapshot Component 4`] = `
+<div>
+  <div>
+    Default
+  </div>
+</div>
+`;
