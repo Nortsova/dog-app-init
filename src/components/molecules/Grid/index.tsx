@@ -6,12 +6,19 @@ import { IconHeart } from '../../atoms/IconHeart';
 import { useAddFavouritesMutation } from '../../../services/favourites';
 import { useGetImagesWithFavourites } from '../../../hooks';
 
+type GridProps = {
+  page: number;
+  order: Order;
+};
+
 const StyledBox = styled(Box)({
   display: 'grid',
   gridTemplateColumns: 'repeat(4, 275px)',
   gridAutoRows: '196px',
   gridGap: '20px',
-  margin: '0 auto',
+  width: '1160px',
+  marginLeft: 'auto',
+  marginRight: 'auto',
   '& .MuiBox-root:first-of-type': {
     gridColumn: '1 / 3',
     gridRow: '1 / 3'
@@ -54,11 +61,6 @@ const StyledBox = styled(Box)({
   }
 });
 
-type GridProps = {
-  page: number;
-  order: Order;
-};
-
 export const Grid: FC<GridProps> = ({ page, order }) => {
   const [addFavourite] = useAddFavouritesMutation();
   const { data: favouritesImages, isLoading } = useGetImagesWithFavourites({
@@ -72,52 +74,50 @@ export const Grid: FC<GridProps> = ({ page, order }) => {
   };
 
   return (
-    <>
+    <StyledBox>
       {isLoading && <div>Loading...</div>}
-      <StyledBox>
-        {(favouritesImages || []).map((item, index) => {
-          const isHover = isHoveredCard === index;
+      {(favouritesImages || []).map((item, index) => {
+        const isHover = isHoveredCard === index;
 
-          return (
-            <CardItem
-              key={item.id}
-              variant="primary"
-              borderRadius={0}
-              onMouseOver={() => setIsHoveredCard(index)}
-              onMouseOut={() => setIsHoveredCard(null)}
-            >
-              <img src={item.url} alt={item.id} height="100%" />
-              {item.isFavourite ? (
-                <IconButton
-                  sx={{
-                    position: 'absolute',
-                    top: '10px',
-                    right: '10px'
-                  }}
-                  onClick={handleBtnAdd(item.id)}
-                >
-                  <IconHeart state="active" />
-                </IconButton>
-              ) : (
-                <IconButton
-                  sx={{
-                    position: 'absolute',
-                    top: '10px',
-                    right: '10px'
-                  }}
-                  onClick={handleBtnAdd(item.id)}
-                >
-                  {isHover ? (
-                    <IconHeart state="hover" />
-                  ) : (
-                    <IconHeart state="default" />
-                  )}
-                </IconButton>
-              )}
-            </CardItem>
-          );
-        })}
-      </StyledBox>
-    </>
+        return (
+          <CardItem
+            key={item.id}
+            variant="primary"
+            borderRadius={0}
+            onMouseOver={() => setIsHoveredCard(index)}
+            onMouseOut={() => setIsHoveredCard(null)}
+          >
+            <img src={item.url} alt={item.id} height="100%" />
+            {item.isFavourite ? (
+              <IconButton
+                sx={{
+                  position: 'absolute',
+                  top: '10px',
+                  right: '10px'
+                }}
+                onClick={handleBtnAdd(item.id)}
+              >
+                <IconHeart state="active" />
+              </IconButton>
+            ) : (
+              <IconButton
+                sx={{
+                  position: 'absolute',
+                  top: '10px',
+                  right: '10px'
+                }}
+                onClick={handleBtnAdd(item.id)}
+              >
+                {isHover ? (
+                  <IconHeart state="hover" />
+                ) : (
+                  <IconHeart state="default" />
+                )}
+              </IconButton>
+            )}
+          </CardItem>
+        );
+      })}
+    </StyledBox>
   );
 };

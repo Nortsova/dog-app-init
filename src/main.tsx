@@ -6,7 +6,6 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
 import { api } from './services/api';
 import { store } from './services/store';
-import './index.css';
 import { DogAppThemeProvider } from './theme';
 import {
   MainPage,
