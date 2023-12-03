@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GalleryBreedId should match snapshot Component 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 100px;
+  padding-top: 50px;
+}
+
+<div>
+  <div
+    class="MuiBox-root emotion-0"
+  >
+    <div>
+      loading image
+    </div>
+    <div>
+      loading breed
+    </div>
+  </div>
+</div>
+`;

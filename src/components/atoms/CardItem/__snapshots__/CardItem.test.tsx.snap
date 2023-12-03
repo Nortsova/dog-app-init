@@ -4,7 +4,6 @@ exports[`CardItem should match snapshot Component 1`] = `
 .emotion-0 {
   border-radius: 80px;
   position: relative;
-  cursor: pointer;
   -webkit-background-position: center;
   background-position: center;
   -webkit-background-size: cover;
@@ -13,6 +12,7 @@ exports[`CardItem should match snapshot Component 1`] = `
   max-width: 590px;
   min-height: 90px;
   background-color: #FFF;
+  cursor: pointer;
   box-shadow: 6px 6px 0px 0px #000000;
   border: 1px solid #090808;
   border-radius: 20px;
@@ -42,7 +42,6 @@ exports[`CardItem should match snapshot Component 2`] = `
 .emotion-0 {
   border-radius: 40px;
   position: relative;
-  cursor: pointer;
   -webkit-background-position: center;
   background-position: center;
   -webkit-background-size: cover;
@@ -80,7 +79,6 @@ exports[`CardItem should match snapshot Component 3`] = `
 .emotion-0 {
   border-radius: 160px;
   position: relative;
-  cursor: pointer;
   -webkit-background-position: center;
   background-position: center;
   -webkit-background-size: cover;
@@ -89,6 +87,7 @@ exports[`CardItem should match snapshot Component 3`] = `
   max-width: 590px;
   min-height: 90px;
   background-color: #FFF;
+  cursor: pointer;
   box-shadow: 6px 6px 0px 0px #000000;
   border: 1px solid #090808;
   border-radius: 40px;

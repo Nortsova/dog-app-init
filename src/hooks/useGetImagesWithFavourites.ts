@@ -5,7 +5,7 @@ import { selectImagesWithFavourites } from '../services/selectors';
 
 type GetImagesWithFavouritesProps = {
   limit?: number;
-  page: number;
+  page?: number;
   order?: Order;
 };
 

@@ -8,7 +8,6 @@ type CardItemProps = {
 export const CardItem = styled(Box)<CardItemProps>(
   ({ theme, variant, borderRadius }) => ({
     position: 'relative',
-    cursor: 'pointer',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
@@ -21,6 +20,7 @@ export const CardItem = styled(Box)<CardItemProps>(
     maxWidth: 590,
     minHeight: 90,
     backgroundColor: theme.palette.common.white,
+    cursor: variant === 'smallRadiusBorder' ? '' : 'pointer',
     boxShadow:
       variant === 'smallRadiusBorder'
         ? `3px 3px 0px 0px ${theme.palette.text.secondary}`

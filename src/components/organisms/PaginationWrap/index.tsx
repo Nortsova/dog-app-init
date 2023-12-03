@@ -1,6 +1,5 @@
-import { Pagination, Stack, styled } from '@mui/material';
+import { Pagination, styled } from '@mui/material';
 import { FC } from 'react';
-import { useGetImagesWithFavourites } from '../../../hooks';
 
 type PaginationWrapProps = {
   page: number;
@@ -15,20 +14,12 @@ const StyledPagination = styled(Pagination)({
 export const PaginationWrap: FC<PaginationWrapProps> = ({
   page,
   handleChange
-}) => {
-  const { isLoading } = useGetImagesWithFavourites({ page });
-
-  return (
-    <Stack>
-      {!isLoading && (
-        <StyledPagination
-          count={28}
-          page={page}
-          onChange={handleChange}
-          showFirstButton
-          showLastButton
-        />
-      )}
-    </Stack>
-  );
-};
+}) => (
+  <StyledPagination
+    count={28}
+    page={page}
+    onChange={handleChange}
+    showFirstButton
+    showLastButton
+  />
+);
